@@ -85,7 +85,7 @@ body{
     bottom: 7%;
   }
   50% {
-    left: 50%;
+    left: 45%;
     transform: scaleX(-1) scale(0.5);
     bottom: -5%;
   }
