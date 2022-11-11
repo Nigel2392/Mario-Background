@@ -1,0 +1,87 @@
+body{
+    overflow: hidden;
+}
+.repeating-bg{
+    background-image: url("./woods.jpg");
+    background-position: bottom left;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100vh;
+    width:100vw;
+    animation: bgmove 600s linear infinite;
+}
+/* Bowser */
+.walking-bg{ 
+  position: absolute;
+  left: 5%;
+  bottom: 7%;
+  z-index: 999;
+  width: 650px;
+  height: auto;
+  animation: move-one 15s  infinite ease-in-out;
+}
+/* Mario */
+.walking-two-bg{
+  position: absolute;
+  left: 25%;
+  bottom: 10%;
+  z-index: 999;
+  width: 300px;
+  height: auto;
+  animation: move-two 15s linear infinite;
+}
+@keyframes move-two {
+  0% {
+    left: 25%;
+  }
+  25% {
+    left: 50%;
+    bottom: 7%;
+  }
+  28% {
+    left: 55%;
+    bottom: 30%;
+  }
+  30% {
+    left: 60%;
+    bottom: 40%;
+  }
+  32% {
+    left: 65%;
+    bottom: 30%;
+  }
+  35% {
+    left: 70%;
+    bottom: 7%;
+  }
+  50% {
+    left: 85%;
+  }
+  100% {
+    left: 25%;
+  }
+}
+
+@keyframes move-one {
+  0% {
+    left: 2%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 2%;
+  }
+}
+
+@keyframes bgmove{
+  from{
+    background-position: 0 0;
+  }
+  to{
+    background-position: -160000px 0;
+  }
+}
+  
+  
+  
