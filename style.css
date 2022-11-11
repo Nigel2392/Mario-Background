@@ -30,6 +30,7 @@ body{
   height: auto;
   animation: move-two 15s linear infinite;
 }
+/* Mario */
 @keyframes move-two {
   0% {
     left: 25%;
@@ -54,21 +55,43 @@ body{
     left: 70%;
     bottom: 7%;
   }
+  49% {
+    left: 70%;
+    transform: scaleX(1);
+    bottom: 7%;
+  }
   50% {
     left: 85%;
+    /* Mirror instantly */
+    transform: scaleX(-1) scale(2.5);
+    bottom: 20%;
+  }
+  99% {
+      transform: scaleX(-1);
   }
   100% {
     left: 25%;
+    transform: scaleX(1);
   }
 }
 
+/* Bowser */
 @keyframes move-one {
   0% {
     left: 2%;
   }
+  49% {
+    transform: scaleX(1);
+    bottom: 7%;
+  }
   50% {
     left: 50%;
+    transform: scaleX(-1) scale(0.5);
+    bottom: -5%;
   }
+  99% {
+    transform: scaleX(-1);
+}
   100% {
     left: 2%;
   }
